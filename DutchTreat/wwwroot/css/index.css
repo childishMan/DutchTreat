@@ -1,0 +1,55 @@
+﻿body {
+    background-color: blanchedalmond;
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
+
+    input[type=submit] {
+        width: auto;
+    }
+
+label {
+    font-size: 16px;
+}
+
+.popupform {
+    display: inline-block;
+    padding: 5px;
+    border: 2px outset black;
+}
+
+#loginToggle {
+    cursor: pointer;
+}
+
+.popupform input {
+    width: 200px;
+}
+
+.popupform label {
+    width: 100px;
+    display: inline-block;
+}
+
+.popupform input[type=checkbox], .popupform input[type=submit] {
+    width: auto;
+}
+
+
+
+menu li{
+    list-style-type: none;
+    color: brown;
+    display: inline;
+}
+
+menu li:after {
+    content: " |";
+}
+
+menu li:last-of-type::after {
+    content: "";
+}

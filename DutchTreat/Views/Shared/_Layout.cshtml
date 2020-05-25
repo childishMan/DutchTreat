@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "xD";
+}
+
+<script src="~/modules/jquery/dist/jquery.min.js"></script>
+<script src="~/js/index.js"></script>
+@RenderSection("Scripts",false)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="~/css/index.css" rel="stylesheet" />
+    <title>dutch treat:  @ViewBag.Title</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <menu>
+                <ul id="menu">
+                    <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                    <li><a asp-controller="App" asp-action="About">About</a></li>
+                </ul>
+            </menu>
+        </div>
+    </header>
+
+    <h2>@ViewBag.Title</h2>
+
+    @RenderBody()
+
+   
+</body>
+</html>
+
