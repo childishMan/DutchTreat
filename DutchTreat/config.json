@@ -1,0 +1,19 @@
+{
+  "Colors": {
+    "Favorite": "blue"
+  },
+  "ConnectionStrings": {
+    "DutchConnectionString": "server=(localdb)\\ProjectsV13;Database=DutchTreatDb;Integrated Security=true;MultipleActiveResultSets=true"
+  },
+  "Logging": {
+    "LogLevel": {
+      "DutchTreat": "Information",
+      "Microsoft": "Warning"
+    }
+  },
+  "Tokens": {
+    "Key": "aksf;as;a;sgas;gkjaskjka; sf",
+    "Issuer": "http://localhost:8888",
+    "Audience": "users"
+  }
+}

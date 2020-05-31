@@ -1,12 +1,11 @@
 ﻿$(document).ready(function () {
 
-    var btn = $("#SendMessage");
+    var btn = $("#send");
 
-    btn.on("click",
-        function() {
-            alert("клік");
-            console.log("click");
-        });
+    if ($('#messageSentAlert').text().length != 0) {
+        console.log("I'm in!");
+        $('#messageSentAlert').fadeIn();
+    }
 
     var info = $(".props li");
     info.on("click",
@@ -18,7 +17,7 @@
     var $popup = $(".popupform");
     $popup.hide();
 
-    $loginToggle.on("click",function() {
+    $loginToggle.on("click", function () {
         $popup.fadeToggle(500);
     })
 });
