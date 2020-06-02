@@ -13,11 +13,13 @@
     </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let o of data.order.items">
-            <td>{{o.productCategory}}-{{o.productTitle}}</td>
-            <td>{{o.quantity}}</td>
-            <td>{{o.unitPrice | currency:"USD":"symbol"}}</td>
-            <td>{{(o.unitPrice * o.quantity) | currency:"USD":"symbol" }}</td>
-        </tr>
+    <tr *ngFor="let o of data.order.items">
+        <td>{{o.productCategory}}-{{o.productTitle}}</td>
+        <td>{{o.quantity}}</td>
+        <td>{{o.unitPrice | currency:"USD":"symbol"}}</td>
+        <td>{{(o.unitPrice * o.quantity) | currency:"USD":"symbol" }}</td>
+    </tr>
     </tbody>
 </table>
+
+<button (click)="onCheckout()" class="btn btn-success" *ngIf="data.order.items.length > 0">Checkout</button>

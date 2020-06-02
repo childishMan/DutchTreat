@@ -14,9 +14,13 @@
 
   <ItemGroup>
     <Content Include="ClientApp\app\app.component.html" />
+    <Content Include="ClientApp\app\checkout\checkout.component.css" />
+    <Content Include="ClientApp\app\checkout\checkout.component.html" />
+    <Content Include="ClientApp\app\login\login.component.html" />
     <Content Include="ClientApp\app\shop\cart.component.html" />
     <Content Include="ClientApp\app\shop\productList.component.css" />
     <Content Include="ClientApp\app\shop\productList.component.html" />
+    <Content Include="ClientApp\app\shop\shop.component.html" />
   </ItemGroup>
 
   <ItemGroup>

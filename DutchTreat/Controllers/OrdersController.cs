@@ -58,7 +58,7 @@ namespace DutchTreat.Controllers
                         return BadRequest("error of user");
                     newOrder.Buyer = currentUser;
 
-                    _repository.AddEntity(newOrder);
+                    _repository.AddOrder(newOrder);
 
                     if (!_repository.SaveAll())
                         throw new Exception("Can't add model");
