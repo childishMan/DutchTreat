@@ -1,25 +1,20 @@
 ﻿@model IEnumerable<DutchTreat.Data.Entities.Product>
-@{
-    ViewData["Title"] = "Shop";
-}
 
 <h1>Shop</h1>
-<p>Count: @Model.Count()</p>
-<div class="row">
-    @foreach (var pr in Model)
-    {
-        <div class="col-md-3">
-            <div class="border bg-light rounded p-1">
-                <img class="img-fluid" src="~/images/@(pr.ArtId).jpg" alt="@pr.ArtDescription" />
-                <h3>@pr.Category - @pr.Size</h3>
-                <ul>
-                    <li>Price: $@pr.Price</li>
-                    <li>Artist: @pr.Artist</li>
-                    <li>Title: @pr.Title</li>
-                    <li>Description: @pr.ArtDescription</li>
-                </ul>
-                <button id="buyButton">Buy</button>
-            </div>
-        </div>
-    }
-</div>
+<the-shop></the-shop>
+
+<script src="~/clientapp/runtime.js"></script>
+@*<script src="~/clientapp/runtime-es2015.js"></script>*@
+@*<script src="~/clientapp/runtime-es5.js"></script>*@
+<script src="~/clientapp/polyfills.js"></script>
+@*<script src="~/clientapp/polyfills-es2015.js"></script>
+<script src="~/clientapp/polyfills-es5.js"></script>*@
+<script src="~/clientapp/styles.js"></script>
+@*<script src="~/clientapp/styles-es2015.js"></script>
+<script src="~/clientapp/styles-es5.js"></script>*@
+<script src="~/clientapp/vendor.js"></script>
+@*<script src="~/clientapp/vendor-es2015.js"></script>
+<script src="~/clientapp/vendor-es5.js"></script>*@
+<script src="~/clientapp/main.js"></script>
+@*<script src="~/clientapp/main-es2015.js"></script>
+<script src="~/clientapp/main-es5.js"></script>*@
